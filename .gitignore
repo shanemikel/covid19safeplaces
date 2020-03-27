@@ -1,0 +1,6 @@
+keys.csv
+db.sqlite3
+.envrc
+.vscode
+*.code-workspace
+.DS_Store

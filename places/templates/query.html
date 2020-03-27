@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>name</th><th>address</th><th>distance</th><th>duration</th>
+        </tr>
+        {% for result in results %}
+            <tr>
+                <td>{{ result.name }}</td>
+                <td>{{ result.formatted_address }}</td>
+                <td>{{ result.distance }}</td>
+                <td>{{ result.duration }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
